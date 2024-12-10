@@ -1,0 +1,135 @@
+/*
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #24353f;
+}
+.login-Box {
+  width: 500px;
+  position: relative;
+  background-color: red;
+}
+
+.login-Box form {
+  width: 100%;
+  padding: 0 50px;
+}
+
+h2 {
+  color: #09c;
+  font-size: 3rem;
+}
+.input-box {
+  position: relative;
+  margin: 25px 0;
+}
+
+.input-box input {
+  width: 100%;
+  height: 50px;
+  background-color: transparent;
+  border: 2px solid #09c;
+  border-radius: 40px;
+}
+
+.forget-pass {
+  margin: 10px 0 10px;
+  text-align: center;
+}
+.forget-pass a {
+  font-size: 1rem;
+  color: white;
+  text-decoration: none;
+}
+
+.btn {
+  width: 100%;
+  height: 3.5rem;
+  border: none;
+  outline: none;
+  border-radius: 40px;
+}
+
+.forget-pass a:hover {
+  text-decoration: underline;
+}
+
+.Sign-up {
+  margin: 10px 0 10px;
+  text-align: center;
+}
+.Sign-up a {
+  font-size: 2rem;
+  color: #09c;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.Sign-up a:hover {
+  text-decoration: underline;
+}
+*/
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #24353f;
+}
+
+.login-Box input {
+  width: 500px;
+}
+.forget-pass a {
+  color: white;
+}
+.Sign-up a {
+  color: white;
+}
+.forget-pass a:hover,
+.Sign-up a:hover {
+  color: #1358ca;
+}
+
+.login-Box input:focus ~ label,
+.login-Box input:valid ~ label {
+  color: #09c !important;
+  top: -15px;
+  /* background-color: #24353f !important; */
+}
+
+span {
+  position: absolute;
+  top: 40%;
+  left: 30px;
+  width: 32px;
+  height: 6px;
+  background: rebeccapurple;
+  border-radius: 8px;
+  transform-origin: 220px;
+  transform: scale(1.5) rotate(calc(var(--i) * (360deg / 51)));
+  animation: animationCircle 5s linear infinite;
+  animation-delay: calc(var(--i) * (5s / 51));
+}
+
+@keyframes animationCircle {
+  0% {
+    background: rgb(0, 186, 248);
+  }
+  25% {
+    background: #2c4766;
+  }
+}
+
+.alert {
+  width: 500px;
+  height: 70px;
+}
